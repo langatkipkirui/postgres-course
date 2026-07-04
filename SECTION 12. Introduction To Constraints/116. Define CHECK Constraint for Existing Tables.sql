@@ -22,6 +22,7 @@ CHECK (
 INSERT INTO prices (product_id, price, discount, valid_from) VALUES (2, 200,30,NOW());
 
 
+-- 4. Lets insert data that goes against the 
 -- 4. Lets view the data in the table
 SELECT * FROM prices
 
