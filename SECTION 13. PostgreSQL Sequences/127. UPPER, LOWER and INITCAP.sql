@@ -19,7 +19,7 @@ SELECT
 FROM customers;
 
 -- 3. Lower Case
-SELECT LOWER('Andrew Tate') AS name
+SELECT LOWER('Aragchi') AS name
 
 -- 4. InitCap
 SELECT INITCAP('the world is changing at a lightning speed');
@@ -31,6 +31,11 @@ SELECT
 FROM customers
 ORDER BY
 	first_name;
+
+select pg_sleep(10);g
+show data_directory;
+show log_directory;
+SEELECT md5(random()::text) as stress_test;
 
 
 
