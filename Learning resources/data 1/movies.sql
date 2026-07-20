@@ -9,7 +9,7 @@ CREATE TABLE movies(
 	release_date TIMESTAMPTZ  NOT NULL,
 	age_certificate VARCHAR(5)  NOT NULL,
 	director_id INT,
-	FOREIGN KEY (director_id) REFERENCES directors (director_id)
+	
 );
 
 
