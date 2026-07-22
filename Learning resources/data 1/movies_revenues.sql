@@ -1,6 +1,14 @@
 -- ---------------------------------------------------------
 --  Records of 'movies' database > table : movies_revenues
 -- ---------------------------------------------------------
+CREATE TABLE movies_revenues(
+	revenue_id INT PRIMARY KEY,
+	movie_id INT NOT NULL,
+	revenues_domestic VARCHAR,
+	revenues_international VARCHAR
+)
+drop table movies_revenues
+
 INSERT INTO movies_revenues (revenue_id,movie_id,revenues_domestic,revenues_international) VALUES
 ('1','45','22.2','1.3'),
 ('2','13','199.4','201.2'),

@@ -3,13 +3,14 @@
 -- ---------------------------------------------------
 CREATE TABLE movies(
     movie_id SERIAL PRIMARY KEY,
+	revenue_id INT,
 	movie_name VARCHAR (150) UNIQUE  NOT NULL,
 	movie_length VARCHAR (10)  NOT NULL,
 	movie_lang  VARCHAR  NOT NULL,
 	release_date TIMESTAMPTZ  NOT NULL,
 	age_certificate VARCHAR(5)  NOT NULL,
 	director_id INT,
-	
+	FOREIGN KEY (revenue_id) REFERENCES movies_revenues (revenue_id)
 );
 
 
