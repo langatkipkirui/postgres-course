@@ -1,6 +1,13 @@
 -- ---------------------------------------------------
 --  Records of 'movies' database > table : directors
 -- ---------------------------------------------------
+
+CREATE TABLE directors(
+	first_name VARCHAR(150) NOT NULL,
+	last_name VARCHAR(150) NOT NULL,
+	date_of_birth TIMESTAMP NOT NULL,
+	nationality VARCHAR(150)
+);
 INSERT INTO directors (first_name,last_name,date_of_birth,nationality) VALUES
 ('Tomas','Alfredson','1965-04-01','Swedish'),
 ('Paul','Anderson','1970-06-26','American'),
