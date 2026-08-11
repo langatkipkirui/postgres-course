@@ -40,7 +40,6 @@ infinity
 
 */
 
-select now()
 
 
 
